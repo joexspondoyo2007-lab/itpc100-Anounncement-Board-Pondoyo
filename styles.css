@@ -1,0 +1,98 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0a0f0d;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    width: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    background: #121a16;
+    border: 2px solid #00ff88;
+    box-shadow: 0 0 25px rgba(0,255,136,0.3);
+    text-align: center;
+    color: white;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    color: #00ff88;
+    text-shadow: 0 0 10px rgba(0,255,136,0.7);
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #00ff88;
+    background: transparent;
+    color: white;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(90deg, #00ff88, #ffee00);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,238,0,0.6);
+}
+
+/* Output container */
+#outputBox {
+    margin-top: 20px;
+}
+
+/* Posts */
+.post {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    background: #0f1412;
+    border-left: 4px solid #ffee00;
+    color: #00ff88;
+
+    /* Animation */
+    opacity: 0;
+    transform: translateY(15px);
+    animation: slideIn 0.4s ease forwards;
+}
+
+/* Animation */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
